@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+
+    <!-- FILTER -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('ui')">UI Design</button>
+        <button onclick="filterImages('frontend')">Frontend Layouts</button>
+        <button onclick="filterImages('web')">Web Pages</button>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+
+        <div class="item ui"><img src="https://miro.medium.com/v2/resize:fit:1400/0*bIJXKRHpJ2KKUbj1.png"></div>
+        <div class="item frontend"><img src="https://d2ap5pxphtale5.cloudfront.net/webcluesinfotech/1724155070616_building-the-foundations-of-web-development-min.jpg"></div>
+        <div class="item web"><img src="https://img.magnific.com/free-psd/flat-design-creativity-template_23-2150471372.jpg?semt=ais_hybrid&w=740&q=80"></div>
+
+        <div class="item ui"><img
+                src="https://blog.blorencedesign.com/wp-content/uploads/2024/07/16683353_5757453-1024x683.webp"></div>
+        <div class="item frontend"><img src="https://media.calibraint.com/calibraint-wordpress/wp-content/uploads/2024/10/29062101/How-to-Design-an-Effective-Frontend-Architecture_-1024x658.webp"></div>
+        <div class="item web"><img src="https://www.networksolutions.com/blog/wp-content/uploads/2025/08/website-design-process.png"></div>
+
+        <div class="item ui"><img
+                src="https://blog.tubikstudio.com/wp-content/uploads/2017/06/bright-vibe-calendar-UI-design.png"></div>
+        <div class="item frontend"><img src="https://miro.medium.com/v2/resize:fit:1200/1*dN9q0DLP70Sth2cuj8_8Pw.png"></div>
+        <div class="item web"><img src="https://www.forbes.ro/wp-content/uploads/2023/04/Forbes.ro-itexclusiv.ro_.jpg"></div>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <button class="prev">&#10094;</button>
+        <img id="lightbox-img">
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
